@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 using Microsoft.Win32;
 using System.IO;
+using System.Diagnostics;
 
 namespace AI_DogCat
 {
@@ -27,6 +28,7 @@ namespace AI_DogCat
         const string PICTURE_EXT = ".jpg";
         const string MODEL = "Model|*.h5";
         const string MODEL_EXT = ".h5";
+        const string AI_PATH = "C:/MyFile/Minamin1234/AI_CatDog/main.py";
 
         string PicPath = "./pic.jpg";
         string ModelPath = "./cnn.h5";
@@ -93,7 +95,14 @@ namespace AI_DogCat
 
         private void Start_Clicked(object sender, RoutedEventArgs e)
         {
-
+            ProcessStartInfo p = new ProcessStartInfo();
+            p.FileName = "python";
+            p.Arguments = $"{AI_PATH} {this.PicPath} {this.ModelPath}";
+            Console.WriteLine($"{AI_PATH} {this.PicPath} {this.ModelPath}");
+            p.UseShellExecute = true;
+            Process.Start(p);
+            //var args = Environment.GetCommandLineArgs();
+            //Console.WriteLine(args[0]);
         }
 
         private void SelectModel_Clicked(object sender, RoutedEventArgs e)

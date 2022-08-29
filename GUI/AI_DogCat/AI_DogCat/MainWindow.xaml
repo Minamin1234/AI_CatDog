@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"  AllowDrop="True" Drop="File_Dropped" DragOver="File_OnOver">
     <Grid>
-
-        <Border x:Name="Controls" BorderBrush="Black" BorderThickness="1" Margin="410,10,10,10" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="410,10,10,222">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                <Label Content="Result" FontSize="24" HorizontalContentAlignment="Center" Height="41"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Status: " FontSize="24" HorizontalContentAlignment="Left" Height="41"/>
+                    <Border x:Name="BR_Status" BorderBrush="Black" BorderThickness="0.5" Width="290" Background="Gray"/>
+                </StackPanel>
+                <TextBlock x:Name="T_Result" Text="Cat:" FontSize="22" MinHeight="3" MaxWidth="378" HorizontalAlignment="Left" Width="376" Height="115"/>
+            </StackPanel>
+            
+        </Border>
+        <Border x:Name="Controls" BorderBrush="Black" BorderThickness="1,1,1,1" Margin="410,217,10,10" RenderTransformOrigin="0.5,0.5">
             <StackPanel x:Name="Stacks_R" Orientation="Vertical" VerticalAlignment="Bottom">
+                
                 <StackPanel x:Name="Text_Model" Orientation="Horizontal" Height="44" HorizontalAlignment="Stretch" ClipToBounds="True">
                     <Label Content="Model: " FontSize="24" />
                     <TextBox x:Name="TB_ModelPath" TextWrapping="Wrap" Text="./cnn.h5" FontSize="24" HorizontalContentAlignment="Stretch" ClipToBounds="True" HorizontalScrollBarVisibility="Auto" MinWidth="10" Width="213"/>

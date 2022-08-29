@@ -1,5 +1,4 @@
 #みなみん猫の判定
-from ctypes import resize
 import keras
 import sys, os
 import numpy as np
@@ -36,11 +35,10 @@ def Predict(path_model,path_AIpic,imgsize=(64,64)):
     AIimg = Get_AI_Image(path_AIpic,imgsize)
     result = model.predict(np.array([AIimg]))
     return result
-
-
+"""
 Result = Predict(AI_MODEL,PIC,IMGSIZE)
 Index = np.argmax(Result,axis=1)
-"""
+
 print("----------判定----------")
 if Index == 0:
     print("-> 犬🐕")
@@ -52,7 +50,6 @@ Per_Cat = Result[0][1] * 100
 print("犬🐕: " + f"{Per_Dog:.3f}" + "%")
 print("猫🐈: " + f"{Per_Cat:.3f}" + "%")
 """
-
 #print("----------画像----------")
 #pic_width = 300
 #img = Image.open(testpic)

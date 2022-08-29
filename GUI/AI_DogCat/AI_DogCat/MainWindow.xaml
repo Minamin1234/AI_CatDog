@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AI_DogCat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"  AllowDrop="True" Drop="File_Dropped" DragOver="File_OnOver">
     <Grid>
 
         <Border x:Name="Controls" BorderBrush="Black" BorderThickness="1" Margin="410,10,10,10" RenderTransformOrigin="0.5,0.5">
@@ -17,7 +17,7 @@
                 </StackPanel>
                 <StackPanel x:Name="Text_Picture" Orientation="Horizontal" HorizontalAlignment="Stretch">
                     <Label Content="Picture: " FontSize="24"/>
-                    <TextBox x:Name="TB_PicPath" TextWrapping="Wrap" Text="./pic.jpg" FontSize="24" HorizontalContentAlignment="Stretch" Width="207" ClipToBounds="True" HorizontalScrollBarVisibility="Auto" Height="44"/>
+                    <TextBox x:Name="TB_PicPath" TextWrapping="Wrap" Text="./pic.jpg" FontSize="24" HorizontalContentAlignment="Stretch" Width="207" ClipToBounds="True" HorizontalScrollBarVisibility="Auto" Height="44" Drop="File_Dropped" DragOver="File_OnOver"/>
                     <Button x:Name="B_SelectPic" Content="..." Click="SelectPicture_Clicked" FontSize="24" Width="30"/>
                 </StackPanel>
                 <Button x:Name="B_Start" Content="Start" Click="Start_Clicked" FontSize="24" Height="52"/>
@@ -32,9 +32,9 @@
             </Border.RenderTransform>
 
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,0,10" HorizontalAlignment="Left" Width="390">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,0,10" HorizontalAlignment="Left" Width="390" >
             <StackPanel x:Name="Stacks_L" Orientation="Vertical" VerticalAlignment="Top" Height="413" Margin="0,-1,0,0">
-                <Image x:Name="Img_Imgbox" Height="408" OpacityMask="#FFA08E8E"/>
+                <Image x:Name="Img_Imgbox" Height="408" OpacityMask="#FFA08E8E" AllowDrop="True" Panel.ZIndex="1"/>
             </StackPanel>
         </Border>
 

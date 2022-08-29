@@ -24,7 +24,9 @@ namespace AI_DogCat
     public partial class MainWindow : Window
     {
         const string PICTURE = "Picture|*.jpg";
+        const string PICTURE_EXT = ".jpg";
         const string MODEL = "Model|*.h5";
+        const string MODEL_EXT = ".h5";
 
         string PicPath = "./pic.jpg";
         string ModelPath = "./cnn.h5";
@@ -47,6 +49,26 @@ namespace AI_DogCat
                 Console.Write(dialog.FileName);
             }
             return dialog.FileName;
+        }
+
+        /// <summary>
+        /// 指定した画像を読み込みます。
+        /// </summary>
+        /// <param name="path"></param>
+        public void LoadImage(string path)
+        {
+            TB_PicPath.Text = path;
+            this.PicPath = path;
+        }
+
+        /// <summary>
+        /// 指定したモデルを読み込みます。
+        /// </summary>
+        /// <param name="path"></param>
+        public void LoadModel(string path)
+        {
+            TB_ModelPath.Text = path;
+            this.ModelPath = path;
         }
 
         /// <summary>
@@ -77,16 +99,35 @@ namespace AI_DogCat
         private void SelectModel_Clicked(object sender, RoutedEventArgs e)
         {
             var path = this.SelectFile(MODEL);
-            TB_ModelPath.Text = path;
-            this.ModelPath = path;
+            this.LoadModel(path);
         }
 
         private void SelectPicture_Clicked(object sender, RoutedEventArgs e)
         {
             var path = this.SelectFile(PICTURE);
-            TB_PicPath.Text = path;
-            this.PicPath = path;
+            LoadImage(path);
             ShowImage(path);
+        }
+
+        private void File_Dropped(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            var ext = System.IO.Path.GetExtension(files[0]);
+            if (String.Compare(ext,".jpg",true) == 0)
+            {
+                this.LoadImage(files[0]);
+                this.ShowImage(files[0]);
+            }
+            else if(String.Compare(ext,".h5",true) == 0)
+            {
+                this.LoadModel(files[0]);
+            }
+        }
+
+        private void File_OnOver(object sender, DragEventArgs e)
+        {
+            e.Effects = DragDropEffects.Copy;
+            e.Handled = false;
         }
     }
 }

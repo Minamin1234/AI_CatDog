@@ -43,17 +43,22 @@ namespace AI_DogCat
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string PICTURE = "Picture|*.jpg";
-        const string PICTURE_EXT = ".jpg";
-        const string MODEL = "Model|*.h5";
-        const string MODEL_EXT = ".h5";
-        const string AI_PATH = "C:/MyFile/Minamin1234/AI_CatDog/main.py";
-        const string RESULT_PATH = @"C:\MyFile\Minamin1234\AI_CatDog\result.txt";
-        const string PER_FMT = "0.00";
+        const string DBG_PATH = @"C:\MyFile\Minamin1234\AI_CatDog";
 
-        const string RESULT_SUCCESS = "Success";
-        const string RESULT_FAILURE = "Failure";
-        List<string> RESULT_LIST = new List<string>() 
+        const string PICTURE = "Picture|*.jpg"; //画像ファイルを選択する際のフィルタ
+        const string PICTURE_EXT = ".jpg";      //画像ファイルの拡張子
+        const string MODEL = "Model|*.h5";      //学習モデルを選択する際のフィルタ
+        const string MODEL_EXT = ".h5";         //学習モデルの拡張子
+        const string PER_FMT = "0.00";          //確率を表示する際のフォーマット
+
+        string EXEPATH = Environment.GetCommandLineArgs()[0];                                     //この実行ファイルがあるパス
+        string FOLDERPATH = System.IO.Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]); //この実行ファイルが格納されているフォルダパス
+        string AI_PATH = "/AI/main.py";                                                              //画像判定プログラムのパス
+        string RESULT_PATH = "/AI/result.txt";                                                       //判定結果を格納しているファイルのパス
+
+        const string RESULT_SUCCESS = "Success";                                                  //判定に成功した際の文字列
+        const string RESULT_FAILURE = "Failure";                                                  //判定に失敗した際の文字列
+        List<string> RESULT_LIST = new List<string>()                                             //判定の値の名称
         { 
             "Dog",
             "Cat"
@@ -64,13 +69,20 @@ namespace AI_DogCat
         Color STATE_SUCCESS = Color.FromRgb(0, 225, 100);
         Color STATE_FAILURE = Color.FromRgb(210, 30, 0);
 
-        string PicPath = "./pic.jpg";
-        string ModelPath = "./cnn.h5";
+        string PicPath = "/AI/pic.jpg";
+        string ModelPath = "/AI/cnn.h5";
         STATE Status = STATE.NONE;
 
         public MainWindow()
         {
             InitializeComponent();
+            #if DEBUG
+            this.FOLDERPATH = DBG_PATH;
+            #endif
+            this.AI_PATH = this.FOLDERPATH + this.AI_PATH;
+            this.RESULT_PATH = this.FOLDERPATH + this.RESULT_PATH;
+            this.PicPath = this.FOLDERPATH + this.PicPath;
+            this.ModelPath = this.FOLDERPATH + this.ModelPath;
         }
 
         /// <summary>
@@ -231,6 +243,11 @@ namespace AI_DogCat
         {
             var result = Predict();
             ShowResult(result);
+            #if DEBUG
+            Console.WriteLine("FOLDERPATH: " + this.FOLDERPATH);
+            Console.WriteLine("AI_PATH: " + this.AI_PATH);
+            Console.WriteLine("RESULT_PATH: " + this.RESULT_PATH);
+            #endif
             //var args = Environment.GetCommandLineArgs();
             //Console.WriteLine(args[0]);
         }

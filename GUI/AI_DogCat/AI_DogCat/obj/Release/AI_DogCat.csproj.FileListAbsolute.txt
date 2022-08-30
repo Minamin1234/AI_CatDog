@@ -1,0 +1,15 @@
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\bin\Release\AI_DogCat.exe.config
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\bin\Release\AI_DogCat.exe
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\bin\Release\AI_DogCat.pdb
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.csproj.SuggestedBindingRedirects.cache
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\MainWindow.g.cs
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\App.g.cs
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat_MarkupCompile.cache
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat_MarkupCompile.lref
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\MainWindow.baml
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.g.resources
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.Properties.Resources.resources
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.csproj.GenerateResource.cache
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.csproj.CoreCompileInputs.cache
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.exe
+C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Release\AI_DogCat.pdb

@@ -115,6 +115,8 @@ namespace AI_DogCat
         /// <param name="path"></param>
         public void ShowImage(string path)
         {
+            this.SetStatusColor(STATE.NONE);
+            this.SetStatusText("");
             var ms = new MemoryStream();
             using(var fs = new FileStream(path,FileMode.Open))
             {
@@ -248,6 +250,7 @@ namespace AI_DogCat
 
         private void File_Dropped(object sender, DragEventArgs e)
         {
+            
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             var ext = System.IO.Path.GetExtension(files[0]);
             if (String.Compare(ext,".jpg",true) == 0)

@@ -5,16 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AI_DogCat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"  AllowDrop="True" Drop="File_Dropped" DragOver="File_OnOver">
+        Title="AI_DogCat" Height="450" Width="800"  AllowDrop="True" Drop="File_Dropped" DragOver="File_OnOver" ResizeMode="NoResize" Icon="/bobtail-1503869.jpg">
     <Grid>
         <Border BorderBrush="Black" BorderThickness="1" Margin="410,10,10,222">
             <StackPanel Orientation="Vertical" VerticalAlignment="Top">
                 <Label Content="Result" FontSize="24" HorizontalContentAlignment="Center" Height="41"/>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Status: " FontSize="24" HorizontalContentAlignment="Left" Height="41"/>
-                    <Border x:Name="BR_Status" BorderBrush="Black" BorderThickness="0.5" Width="290" Background="Gray"/>
+                    <Border x:Name="BR_Status" BorderBrush="Black" BorderThickness="0.5" Width="273" Background="Gray">
+                        <Label x:Name="T_Status" Content="" FontSize="24" HorizontalAlignment="Center"/>
+                    </Border>
                 </StackPanel>
-                <TextBlock x:Name="T_Result" Text="Cat:" FontSize="22" MinHeight="3" MaxWidth="378" HorizontalAlignment="Left" Width="376" Height="115"/>
+                <TextBlock x:Name="T_Result" FontSize="22" MinHeight="3" MaxWidth="378" HorizontalAlignment="Left" Width="376" Height="115" Text=""/>
             </StackPanel>
             
         </Border>

@@ -20,6 +20,25 @@ using System.Diagnostics;
 namespace AI_DogCat
 {
     /// <summary>
+    /// 状態を表す列挙体
+    /// </summary>
+    public enum STATE
+    {
+        /// <summary>
+        /// 未操作/実行中
+        /// </summary>
+        NONE,
+        /// <summary>
+        /// 実行に成功した
+        /// </summary>
+        SUCCESS,
+        /// <summary>
+        /// 実行に失敗
+        /// </summary>
+        FAILURE
+    };
+
+    /// <summary>
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
     public partial class MainWindow : Window
@@ -29,9 +48,26 @@ namespace AI_DogCat
         const string MODEL = "Model|*.h5";
         const string MODEL_EXT = ".h5";
         const string AI_PATH = "C:/MyFile/Minamin1234/AI_CatDog/main.py";
+        const string RESULT_PATH = @"C:\MyFile\Minamin1234\AI_CatDog\result.txt";
+        const string PER_FMT = "0.00";
+
+        const string RESULT_SUCCESS = "Success";
+        const string RESULT_FAILURE = "Failure";
+        List<string> RESULT_LIST = new List<string>() 
+        { 
+            "Dog",
+            "Cat"
+        };
+        const int RESULT_DOG = 0;
+        const int RESULT_CAT = 1;
+        Color STATE_NONE = Color.FromRgb(130, 130, 130);
+        Color STATE_SUCCESS = Color.FromRgb(0, 225, 100);
+        Color STATE_FAILURE = Color.FromRgb(210, 30, 0);
 
         string PicPath = "./pic.jpg";
         string ModelPath = "./cnn.h5";
+        STATE Status = STATE.NONE;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -48,7 +84,7 @@ namespace AI_DogCat
             dialog.Filter = type;
             if(dialog.ShowDialog() == true)
             {
-                Console.Write(dialog.FileName);
+                //Console.Write(dialog.FileName);
             }
             return dialog.FileName;
         }
@@ -93,14 +129,106 @@ namespace AI_DogCat
             this.Img_Imgbox.Source = img;
         }
 
-        private void Start_Clicked(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// 状態(背景)を更新します。
+        /// </summary>
+        /// <param name="newstatus"></param>
+        public void SetStatusColor(STATE newstatus)
         {
+            this.Status = newstatus;
+            switch (this.Status)
+            {
+                case STATE.NONE:
+                    this.BR_Status.Background = new SolidColorBrush(STATE_NONE);
+                    break;
+                case STATE.SUCCESS:
+                    this.BR_Status.Background = new SolidColorBrush(STATE_SUCCESS);
+                    break;
+                case STATE.FAILURE:
+                    this.BR_Status.Background = new SolidColorBrush(STATE_FAILURE);
+                    break;
+            }
+        }
+
+        public void SetStatusText(string newtext)
+        {
+            this.T_Status.Content = newtext;
+        }
+
+        /// <summary>
+        /// 予測プログラムを実行し、予測結果を返します。
+        /// </summary>
+        /// <returns></returns>
+        public List<string> Predict()
+        {
+            this.SetStatusColor(STATE.NONE);
+            this.SetStatusText("");
             ProcessStartInfo p = new ProcessStartInfo();
             p.FileName = "python";
-            p.Arguments = $"{AI_PATH} {this.PicPath} {this.ModelPath}";
-            Console.WriteLine($"{AI_PATH} {this.PicPath} {this.ModelPath}");
+            p.Arguments = $"{AI_PATH} {this.PicPath} {this.ModelPath} {RESULT_PATH}";
             p.UseShellExecute = true;
-            Process.Start(p);
+
+            Process ps = Process.Start(p);
+            this.Topmost = true;
+            ps.WaitForExit();
+            this.Topmost = false;
+
+            StreamReader r = new StreamReader(RESULT_PATH, Encoding.GetEncoding("Shift-JIS"));
+            List<string> result = new List<string>(0);
+            while(r.Peek() != -1)
+            {
+                var res = r.ReadLine();
+                result.Add(res);
+                Console.WriteLine(res);
+            }
+            r.Close();
+
+            return result;
+        }
+
+        /// <summary>
+        /// 予測結果からウィンドウに結果を表示します。
+        /// </summary>
+        /// <param name="result"></param>
+        public void ShowResult(in List<string> result)
+        {
+            string res = "";
+            List<float> values = new List<float>();
+            float dog = float.Parse(result[1]) * 100; //dog
+            float cat = float.Parse(result[2]) * 100; //cat
+            values.Add(dog);
+            values.Add(cat);
+            res += " Dog: ";
+            res += values[0].ToString(PER_FMT) + "%" + Environment.NewLine;
+
+            res += " Cat: ";
+            res += values[1].ToString(PER_FMT) + "%";
+            T_Result.Text = res;
+
+            var mx = values.Max();
+            int most = values.IndexOf(mx);
+            switch(result[0])
+            {
+                case RESULT_SUCCESS:
+                    this.SetStatusColor(STATE.SUCCESS);
+                    this.SetStatusText(RESULT_LIST[most]);
+                    break;
+                case RESULT_FAILURE:
+                default:
+                    this.SetStatusColor(STATE.FAILURE);
+                    break;
+            }
+        }
+
+        public void ClearResult()
+        {
+            T_Result.Text = "";
+        }
+
+        private void Start_Clicked(object sender, RoutedEventArgs e)
+        {
+            var result = Predict();
+            ShowResult(result);
             //var args = Environment.GetCommandLineArgs();
             //Console.WriteLine(args[0]);
         }

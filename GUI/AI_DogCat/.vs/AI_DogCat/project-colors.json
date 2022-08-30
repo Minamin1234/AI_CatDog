@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ccd848c7-8759-4cd2-a75b-250b46116cff": {
+      "ProjectGuid": "ccd848c7-8759-4cd2-a75b-250b46116cff",
+      "DisplayName": "AI_DogCat",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,4 +1,3 @@
-#みなみん猫の判定
 import keras
 import sys, os
 import numpy as np

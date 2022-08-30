@@ -13,4 +13,3 @@ C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Debug\AI_DogCat.cspr
 C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Debug\AI_DogCat.csproj.CoreCompileInputs.cache
 C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Debug\AI_DogCat.exe
 C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Debug\AI_DogCat.pdb
-C:\MyFile\Minamin1234\AI_CatDog\GUI\AI_DogCat\AI_DogCat\obj\Debug\AI_DogCat.csproj.AssemblyReference.cache

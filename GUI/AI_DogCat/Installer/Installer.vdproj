@@ -15,8 +15,74 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_01EE6D164B974247971F8FABA2A98E05"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_03EA5B4319C7422990EA2370310A24B1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_05CCD51B20B64907BB26A1474CBCF409"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3669E90CE6FB4F20B1D5A94F3ED79394"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_449727B966FD4A40A9819C69BD6B16D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4EE865A852FF446FBCD0B666D547A2DF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_52C26BD3C19241C89BFAB0EA7E95E816"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_656BBFCA4D244FB79D6C878F08C60077"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_716C73B690EB4E218C62F737144A9A2B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_72E6BC3E6A09485D814323396FBDF027"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9EAC6799B82775D55875F3B9D5C72172"
         "OwnerKey" = "8:_C56B167CA8A048689E204ADBFB2099AF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B9A1BEBB178C4780B3FCC3E863A2ECFF"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,6 +166,206 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_01EE6D164B974247971F8FABA2A98E05"
+            {
+            "SourcePath" = "8:..\\..\\..\\AI\\cnn.h5"
+            "TargetName" = "8:cnn.h5"
+            "Tag" = "8:"
+            "Folder" = "8:_1AC8B62142594091A117AD8932EF9E66"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_03EA5B4319C7422990EA2370310A24B1"
+            {
+            "SourcePath" = "8:..\\..\\..\\SamplePic\\bobtail-1503869.jpg"
+            "TargetName" = "8:bobtail-1503869.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_2013463CCE9D468CB858E014BB6B0575"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_05CCD51B20B64907BB26A1474CBCF409"
+            {
+            "SourcePath" = "8:..\\..\\..\\SamplePic\\IMG_3827.JPG"
+            "TargetName" = "8:IMG_3827.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_2013463CCE9D468CB858E014BB6B0575"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3669E90CE6FB4F20B1D5A94F3ED79394"
+            {
+            "SourcePath" = "8:..\\..\\..\\SamplePic\\IMG_1134.JPG"
+            "TargetName" = "8:IMG_1134.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_2013463CCE9D468CB858E014BB6B0575"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_449727B966FD4A40A9819C69BD6B16D2"
+            {
+            "SourcePath" = "8:..\\..\\..\\SamplePic\\IMG_3833.JPG"
+            "TargetName" = "8:IMG_3833.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_2013463CCE9D468CB858E014BB6B0575"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4EE865A852FF446FBCD0B666D547A2DF"
+            {
+            "SourcePath" = "8:..\\..\\..\\python_setup.bat"
+            "TargetName" = "8:python_setup.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_0E112D63D5A24DDABDDAE7A5C514B2C4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52C26BD3C19241C89BFAB0EA7E95E816"
+            {
+            "SourcePath" = "8:..\\..\\..\\AI\\dogcat.py"
+            "TargetName" = "8:dogcat.py"
+            "Tag" = "8:"
+            "Folder" = "8:_1AC8B62142594091A117AD8932EF9E66"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_656BBFCA4D244FB79D6C878F08C60077"
+            {
+            "SourcePath" = "8:..\\..\\..\\AI\\result.txt"
+            "TargetName" = "8:result.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_1AC8B62142594091A117AD8932EF9E66"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_716C73B690EB4E218C62F737144A9A2B"
+            {
+            "SourcePath" = "8:..\\..\\..\\SamplePic\\IMG_7755.jpg"
+            "TargetName" = "8:IMG_7755.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_2013463CCE9D468CB858E014BB6B0575"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_72E6BC3E6A09485D814323396FBDF027"
+            {
+            "SourcePath" = "8:..\\..\\..\\AI\\main.py"
+            "TargetName" = "8:main.py"
+            "Tag" = "8:"
+            "Folder" = "8:_1AC8B62142594091A117AD8932EF9E66"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9EAC6799B82775D55875F3B9D5C72172"
             {
             "AssemblyRegister" = "3:1"
@@ -131,6 +397,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B9A1BEBB178C4780B3FCC3E863A2ECFF"
+            {
+            "SourcePath" = "8:..\\..\\..\\AI\\__pycache__\\dogcat.cpython-38.pyc"
+            "TargetName" = "8:dogcat.cpython-38.pyc"
+            "Tag" = "8:"
+            "Folder" = "8:_EC7BAB36519D4161BE8A5B96C79BCF2C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -139,7 +425,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_0E112D63D5A24DDABDDAE7A5C514B2C4"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -147,6 +433,39 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_1AC8B62142594091A117AD8932EF9E66"
+                    {
+                    "Name" = "8:AI"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_20402F1ABC564FC9B526F544CC98128A"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_EC7BAB36519D4161BE8A5B96C79BCF2C"
+                            {
+                            "Name" = "8:__pycache__"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_5970296B122545ED9397F0A3012A2CA1"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_2013463CCE9D468CB858E014BB6B0575"
+                    {
+                    "Name" = "8:SamplePic"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_D32EA2E335F24209B212F662EB5BC5D3"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_4A582FACE65744588111DB2587EA8484"
@@ -186,9 +505,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:AI_DogCat_Installer"
+        "ProductName" = "8:AI_DogCat"
         "ProductCode" = "8:{E2186A59-80EC-4817-84A5-D97B92621ECE}"
-        "PackageCode" = "8:{288285B4-2062-403D-A6F7-A6937615A35E}"
+        "PackageCode" = "8:{4BAC9763-9EFD-48B5-9507-ED6C6E0A17B3}"
         "UpgradeCode" = "8:{5BC8DB42-3F74-46FB-A68D-755DEF65D6E4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -199,7 +518,7 @@
         "Manufacturer" = "8:Minamin1234"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:AI_DogCat_Installer"
+        "Title" = "8:AI_DogCat"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Minamin"
         "Keywords" = "8:AI"
@@ -209,7 +528,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -709,7 +1028,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C56B167CA8A048689E204ADBFB2099AF"
             {
-            "SourcePath" = "8:..\\AI_DogCat\\obj\\Debug\\AI_DogCat.exe"
+            "SourcePath" = "8:..\\AI_DogCat\\obj\\Release\\AI_DogCat.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0E112D63D5A24DDABDDAE7A5C514B2C4"
